@@ -21,6 +21,11 @@ Route::resource('tasks','TasksController');
 Route::get('signup', 'Auth\AuthController@getRegister')->name('signup.get');
 Route::post('signup', 'Auth\AuthController@postRegister')->name('signup.post');
 
+Route::get('login', 'Auth\AuthController@getLogin')->name('login.get');
+Route::post('login', 'Auth\AuthController@postLogin')->name('login.post');
+Route::get('logout', 'Auth\AuthController@getLogout')->name('logout.get');
+
+
 
 //Route::get('tasks/{id}','TasksController@show');
 //Route::post('tasks','TasksController@store');
